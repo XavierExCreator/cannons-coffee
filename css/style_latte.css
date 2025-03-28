@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --Black: #000000;
+  --Catalina: #06327d;
+  --Bluetiful: #2b70e4;
+  --Vegan: #209d5c;
+  --Sunglow: #ffd034;
+  --White: #ffffff;
+  --Light_Blue: #cadbf8;
+}
+
+.wrapper {
+  max-width: 1200px;
+  padding: 2rem 0;
+  margin: 0 auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: var(--Catalina);
+  color: var(--White);
+  gap: 1rem;
+  align-items: baseline;
+  /*In order to aline the items to the base of the logo, h1 and navbar you can use this "align-items: baseline;"*/
+}
+
+.headerchild1 {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: var(--Catalina);
+  color: var(--White);
+  gap: 1rem;
+  align-items: center;
+  padding-top: 3rem;
+}
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 2;
+  gap: 1rem;
+  align-items: center;
+  /*justify-content: center;*/
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  display: block;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  color: var(--Black);
+  background-color: var(--Catalina);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* {
+  font-family: Poppins;
+  max-width: 1200px;
+  padding: 0;
+  margin: 0 auto;
+} */
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.1667;
+}
+h1,
+h3 {
+  font-weight: 300;
+}
+
+main {
+  background-color: var(--White);
+  border-bottom: 10px solid var(--Sunglow);
+  border-top: 10px solid var(--Sunglow);
+}
+
+.buttonV0 {
+  border-radius: 10px;
+  padding: 0.55rem 1rem;
+  display: inline-block;
+  background-color: var(--Vegan);
+  font-size: 1.25rem;
+}
+
+h1,
+h2,
+.buttonV0,
+nav ul {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.buttonV0,
+a {
+  color: var(--White);
+}
+
+.parent30 {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  /* padding-top: 2.5rem; */
+}
+
+@media (max-width: 999px) {
+  h1 {
+    margin-bottom: 0;
+  }
+  header {
+    justify-content: center;
+    align-items: center;
+  }
+  .parent30 {
+    padding: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+  }
+
+  .buttonV0 {
+    font-size: 1.25rem;
+  }
+
+  .p {
+    font-size: 1.25rem;
+    padding: 1.5rem 0;
+    padding-bottom: 2rem;
+  }
+  ._img {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .child {
+    padding-top: 3rem;
+    padding-right: 3rem;
+  }
+  main {
+    margin: 4rem;
+  }
+  .parent4 {
+    justify-content: center;
+  }
+  header {
+    margin: 0px 70px;
+    justify-content: space-between;
+    padding-right: 2rem;
+    padding-left: 3rem;
+  }
+}
