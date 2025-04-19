@@ -4,51 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style_contact.css" />
+    <link rel="custom.js" href="js/custom.js" />
   </head>
 
   <body>
     <div class="wrapper">
-      <header></header>
+      <header>
+        <div class="headerchild1">
+          <a
+            ><img
+              src="images/logo-nav.png"
+              alt="Cannons Coffee Logo, Beans of Joy"
+          /></a>
+          <h1>Cannons Coffee</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="latte.html" target="_blank">Coffee</a></li>
+            <li>
+              <a href="https://www.meowparlour.com/" target="_blank">About</a>
+            </li>
+            <li>
+              <a href="contact.html" target="_blank">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <main>
-        <h2>Contact Cannons Coffee</h2>
-        <form>
-          <label for="">Name: </label>
-          <input id="" type="text" name="" placeholder="" />
+        <div class="parent5">
+          <h2>Contact Cannons Coffee</h2>
+          <form>
+            <label for="name">Name: </label>
+            <input id="name" type="text" name="name" placeholder="Jane Doe" />
 
-          <label for="">Email: </label>
-          <input id="" type="mail" name="" placeholder="" />
+            <label for="e-mail">Email: </label>
+            <input
+              id="e-mail"
+              type="mail"
+              name="email"
+              placeholder="Example@gmail.com"
+            />
 
-          <label for="">Phone number: </label>
-          <input id="" type="tel" name="" pattern="" />
+            <label for="phonenumber">Phone number: </label>
+            <input
+              id="phonenumber"
+              type="tel"
+              name="telep"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
 
-          <label>Comments: </label>
-          <textarea id="" type="" name="" placeholder="">Comments: </textarea>
-          <!-- 
+            <label for="comments">Comments: </label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="4"
+              cols="50"
+            ></textarea>
+            <!-- 
         For textarea remember it doesn't require an input tag. 
         You need to put the input attributes that you place within an 'input' tag-
         INSTEAD WITHIN the textarea tag! 
         Textarea requires a label!-->
 
-          <label for="">Favortie Coffee flavor: </label>
-          <select id="" name="">
-            <option value="">--Choose preffered flavor of coffee--</option>
-            <option value="">Mocha</option>
-            <option value="">Caramel</option>
-            <option value="">Vanilla</option>
-            <option vlaue="">Mint</option>
-            <option value="">Just the bean please</option>
-          </select>
+            <label for="coffeeflavor">Favortie Coffee flavor: </label>
+            <select id="coffeeflavor" name="coffeeFlavor">
+              <option value="">--Choose preffered flavor of coffee--</option>
+              <option value="mocha">Mocha</option>
+              <option value="caramel">Caramel</option>
+              <option value="vanilla">Vanilla</option>
+              <option vlaue="mint">Mint</option>
+              <option value="none">Just the bean please</option>
+            </select>
 
-          <p>What are you seeking?</p>
-          <label for="">I'm seeking employment!</label>
-          <input id="" type="" name="" placeholder="" />
+            <fieldset>
+              <legend>What are you seeking?</legend>
+              <label for="">I'm seeking employment!</label>
+              <input id="" type="radio" name="radioChoice" placeholder="" />
 
-          <label for="">I'm seeking to purchase!</label>
-          <input id="" type="" name="" placeholder="" />
+              <label for="">I'm seeking to purchase!</label>
+              <input id="" type="radio" name="" placeholder="" />
+            </fieldset>
 
-          <button>Submit!</button>
-        </form>
+            <button type="submit">Submit!</button>
+          </form>
+        </div>
       </main>
       <footer>
         <div class="parent3">
