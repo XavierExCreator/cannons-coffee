@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cannons Coffee Contact</title>
     <link rel="stylesheet" href="css/style_contact.css" />
-    <link rel="custom.js" href="js/custom.js" />
   </head>
 
   <body>
@@ -29,67 +28,81 @@
             <li>
               <a href="contact.html" target="_blank">Contact</a>
             </li>
+            <li>
+              <a href="cart.html" target="_blank">Cart</a>
+            </li>
           </ul>
         </nav>
       </header>
       <main>
         <div class="parent5">
           <h2>Contact Cannons Coffee</h2>
-          <form>
-            <label for="name">Name: </label>
-            <input id="name" type="text" name="name" placeholder="Jane Doe" />
-
-            <label for="e-mail">Email: </label>
-            <input
-              id="e-mail"
-              type="mail"
-              name="email"
-              placeholder="Example@gmail.com"
-            />
-
-            <label for="phonenumber">Phone number: </label>
-            <input
-              id="phonenumber"
-              type="tel"
-              name="telep"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            />
-
-            <label for="comments">Comments: </label>
-            <textarea
-              id="comments"
-              name="comments"
-              rows="4"
-              cols="50"
-            ></textarea>
-            <!-- 
-        For textarea remember it doesn't require an input tag. 
-        You need to put the input attributes that you place within an 'input' tag-
-        INSTEAD WITHIN the textarea tag! 
-        Textarea requires a label!-->
-
-            <label for="coffeeflavor">Favortie Coffee flavor: </label>
-            <select id="coffeeflavor" name="coffeeFlavor">
-              <option value="">--Choose preffered flavor of coffee--</option>
-              <option value="mocha">Mocha</option>
-              <option value="caramel">Caramel</option>
-              <option value="vanilla">Vanilla</option>
-              <option vlaue="mint">Mint</option>
-              <option value="none">Just the bean please</option>
-            </select>
-
+          <form id="form">
             <fieldset>
-              <legend>What are you seeking?</legend>
-              <label for="">I'm seeking employment!</label>
-              <input id="" type="radio" name="radioChoice" placeholder="" />
+              <legend>Contact information:</legend>
+              <div class="childEight">
+                <label for="name">Name: </label>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Jane Doe"
+                />
 
-              <label for="">I'm seeking to purchase!</label>
-              <input id="" type="radio" name="" placeholder="" />
+                <label for="e-mail">Email: </label>
+                <input
+                  id="e-mail"
+                  type="email"
+                  name="email"
+                  placeholder="Example@gmail.com"
+                />
+
+                <label for="phonenumber">Phone number: </label>
+                <input
+                  id="phonenumber"
+                  type="tel"
+                  name="telep"
+                  placeholder="ex: 000-000-0000"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                />
+
+                <label for="comments">Comments: </label>
+                <textarea
+                  id="comments"
+                  name="comments"
+                  rows="4"
+                  cols="50"
+                  placeholder="I'd like to add-"
+                ></textarea>
+                <!-- 
+              For textarea remember it doesn't require an input tag. 
+              You need to put the input attributes that you place within an 'input' tag-
+              INSTEAD WITHIN the textarea tag! 
+              Textarea requires a label!-->
+              </div>
+              <label for="coffeeflavor">Favortie Coffee flavor: </label>
+              <select id="coffeeflavor" name="coffeeFlavor">
+                <option value="">--Choose preffered flavor of coffee--</option>
+                <option value="mocha">Mocha</option>
+                <option value="caramel">Caramel</option>
+                <option value="vanilla">Vanilla</option>
+                <option vlaue="mint">Mint</option>
+                <option value="none">Just the bean please</option>
+              </select>
+
+              <fieldset class="contactFieldset">
+                <legend>What are you seeking?</legend>
+                <label for="work">I'm seeking employment!</label>
+                <input id="work" type="radio" name="radioChoice" />
+                <label for="buying">I'm seeking to purchase!</label>
+                <input id="buying" type="radio" name="radioChoice" />
+              </fieldset>
             </fieldset>
 
             <button type="submit">Submit!</button>
           </form>
         </div>
+        <div class="thankUMessage"></div>
       </main>
       <footer>
         <div class="parent3">
@@ -101,5 +114,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/custom.js"></script>
   </body>
 </html>
